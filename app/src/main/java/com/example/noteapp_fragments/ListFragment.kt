@@ -61,7 +61,7 @@ class ListFragment : Fragment() {
     override fun onResume() {
         super.onResume()
         CoroutineScope(Dispatchers.IO).launch {
-            delay(1000)
+       //     delay(1000)
             listViewModel.getData()
         }
     }
